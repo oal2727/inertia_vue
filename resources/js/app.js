@@ -6,6 +6,10 @@
 
 require('./bootstrap');
 import Vue from 'vue'
+import VueToast from 'vue-toast-notification';
+import 'vue-toast-notification/dist/theme-sugar.css';
+Vue.use(VueToast);
+
 import { createInertiaApp } from '@inertiajs/inertia-vue'
 import '../../node_modules/bulma/css/bulma.css';
 

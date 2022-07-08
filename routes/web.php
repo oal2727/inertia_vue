@@ -15,3 +15,7 @@ use  App\Http\Controllers\PostController;
 */
 
 Route::get("/",[PostController::class,"index"])->name("index");
+Route::get("/create",[PostController::class,"create"])->name("create");
+Route::post("/post",[PostController::class,"store"])->name("store");
+Route::get("/post/{id}",[PostController::class,"edit"])->name("edit");
+Route::delete("/post/{id}",[PostController::class,"destroy"])->name("destroy");
